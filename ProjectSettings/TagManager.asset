@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Spot_002
+  - BG
+  - Icon_001
+  - Text_002
+  - Text_001
+  - Spot_001
+  - BG_002
+  - BG_001
+  - FontStyle
+  - UItext
   layers:
   - Default
   - TransparentFX
