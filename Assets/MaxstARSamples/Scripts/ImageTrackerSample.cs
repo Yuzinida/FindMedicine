@@ -16,7 +16,7 @@ public class ImageTrackerSample : ARBehaviour
         new Dictionary<string, ImageTrackableBehaviour>();
 
     private CameraBackgroundBehaviour cameraBackgroundBehaviour = null;
-    public GameObject UItext;
+    //public GameObject UItext;
     public GameObject canvasObj;
     public GameObject canvasObj1;
     public GameObject canvasObj2;
@@ -28,8 +28,29 @@ public class ImageTrackerSample : ARBehaviour
     public GameObject canvasObj8;
     public GameObject canvasObj9;
 
-    public float time = 0;
-    public float offTime = 3;
+    public GameObject pannel;
+
+    public GameObject pannel1;
+
+    public GameObject pannel2;
+
+    public GameObject pannel3;
+
+    public GameObject pannel4;
+
+    public GameObject pannel5;
+
+    public GameObject pannel6;
+
+    public GameObject pannel7;
+
+    public GameObject pannel8;
+
+    public GameObject pannel9;
+
+
+    //public float time = 0;
+    //public float offTime = 3;
 
     //public GameObject UItext2;
 
@@ -167,6 +188,16 @@ public class ImageTrackerSample : ARBehaviour
             canvasObj7.SetActive(false);
             canvasObj8.SetActive(false);
             canvasObj9.SetActive(false);
+            pannel.SetActive(false);
+            pannel1.SetActive(false);
+            pannel2.SetActive(false);
+            pannel3.SetActive(false);
+            pannel4.SetActive(false);
+            pannel5.SetActive(false);
+            pannel6.SetActive(false);
+            pannel7.SetActive(false);
+            pannel8.SetActive(false);
+            pannel9.SetActive(false);
 
             //UITextaaa.SetActive(false);
             //OffDisplay();
@@ -179,7 +210,7 @@ public class ImageTrackerSample : ARBehaviour
         //OnDisplay();
         switch (trackName)
         {
-            case "BASIC0000":
+            case "BASIC0000": //당뇨병
                 canvasObj.SetActive(true);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -190,8 +221,12 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+
+                if (input.gettouchdown){
+                    pannel.SetActive(true);
+                }
                 break;
-            case "BASIC020114":
+            case "BASIC020114": //타이레놀 80
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(true);
                 canvasObj2.SetActive(false);
@@ -202,8 +237,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel1.SetActive(true);
+                }
                 break;
-            case "BASIC020145":
+            case "BASIC020145": //펜잘큐
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(true);
@@ -214,8 +252,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel2.SetActive(true);
+                }
                 break;
-            case "BASIC020300":
+            case "BASIC020300": //게보린
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -226,8 +267,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel3.SetActive(true);
+                }
                 break;
-            case "BASIC020387":
+            case "BASIC020387": //메이킨큐
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -238,8 +282,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel4.SetActive(true);
+                }
                 break;
-            case "BASIC0201142":
+            case "BASIC0201142": //이지앤6 애니
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -250,8 +297,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel5.SetActive(true);
+                }
                 break;
-            case "BASIC0201495":
+            case "BASIC0201495": // 게보린 소프트
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -262,8 +312,10 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel6.SetActive(true);
+                }
                 break;
-            case "BASIC0201678":
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -274,8 +326,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(true); ;
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel7.SetActive(true);
+                }
                 break;
-            case "BASIC02011234":
+            case "BASIC02011234": // 인사돌
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -286,8 +341,11 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(true);
                 canvasObj9.SetActive(false);
+                if (input.gettouchdown){
+                    pannel8.SetActive(true);
+                }
                 break;
-            case "BASIC02017841":
+            case "BASIC02017841": //
                 canvasObj.SetActive(false);
                 canvasObj1.SetActive(false);
                 canvasObj2.SetActive(false);
@@ -298,6 +356,9 @@ public class ImageTrackerSample : ARBehaviour
                 canvasObj7.SetActive(false);
                 canvasObj8.SetActive(false);
                 canvasObj9.SetActive(true);
+                if (input.gettouchdown){
+                    pannel9.SetActive(true);
+                }
                 break;
         }
     }
